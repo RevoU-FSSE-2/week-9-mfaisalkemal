@@ -32,3 +32,42 @@ CREATE TABLE Transactions (
 
   
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/Z42oEjTh)
+## API Contract
+1. **GET** /user/:id
+   
+   As example, if input id = 2
+   ![image](https://github.com/RevoU-FSSE-2/week-9-mfaisalkemal/assets/130155172/62c73490-3d29-4da8-b37e-af0718eae054)
+2. **POST** /transaction
+   
+   As example, if input POST request like below
+   
+   `
+   {
+    "type": "income",
+    "amount": 70000,
+    "user_id": 1
+   }
+   `
+   
+   will get response
+   ![image](https://github.com/RevoU-FSSE-2/week-9-mfaisalkemal/assets/130155172/bc04f693-7ad2-4731-9cee-cf8ee1201a55)
+3. **PUT** /transaction/:id
+   
+   As example, if input request for PUT transactions id = 1 like below
+   
+   `
+   {
+    "type": "income",
+    "amount": 60000,
+    "user_id": 1
+   }
+   `
+
+   will get response
+   ![image](https://github.com/RevoU-FSSE-2/week-9-mfaisalkemal/assets/130155172/5d1ab5cd-f21e-4cc5-b8c2-55ecb9ef9391)
+
+4. **DELETE** /transaction/:id
+   
+   As example, if input request for DELETE transactions id = 1 will get response
+   
+   ![image](https://github.com/RevoU-FSSE-2/week-9-mfaisalkemal/assets/130155172/fb5cbe57-2d29-4e5a-968c-da65c7a616dc)
